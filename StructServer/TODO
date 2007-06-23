@@ -1,0 +1,2 @@
+* Modificar [SingleConnectionManager -enlapsedTime]
+	- days esta calculado en base a los minutos. Es solo para probar.
