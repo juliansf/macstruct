@@ -1,0 +1,49 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                changePort = id; 
+                closeApplication = id; 
+                finishSelectedConnections = id; 
+                launchServerFromInitWindow = id; 
+                selectAllConnections = id; 
+                startServerFromPortField = id; 
+            }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                activeTimeField = NSTextField; 
+                connectionsCount = NSTextField; 
+                connectionsFinishButton = NSButton; 
+                connectionsList = NSTableView; 
+                connectionsSelAllButton = NSButton; 
+                connectionsView = NSView; 
+                initView = NSView; 
+                logsSaveButton = NSButton; 
+                logsTextView = NSTextView; 
+                logsView = NSView; 
+                mainWindow = NSWindow; 
+                pluginsPopUpButton = NSPopUpButton; 
+                portField = NSTextField; 
+                portStepper = NSStepper; 
+                portView = NSView; 
+                timeOfActivity = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {clearLogs = id; saveLogs = id; }; 
+            CLASS = LogManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                clearButton = NSButton; 
+                logsTextView = NSTextView; 
+                mainWindow = NSWindow; 
+                saveButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

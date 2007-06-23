@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B9761F9D0A0D014B0002670D /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9761F9C0A0D014B0002670D /* Controller.mm */; };
+		B9761FA60A0D02440002670D /* ToolbarDelegateCategory.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9761FA50A0D02440002670D /* ToolbarDelegateCategory.mm */; };
+		B97621780A0E5CFA0002670D /* ConnectionsViewIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621710A0E5CFA0002670D /* ConnectionsViewIcon.tif */; };
+		B976217A0A0E5CFA0002670D /* LogsViewIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621730A0E5CFA0002670D /* LogsViewIcon.tif */; };
+		B976217B0A0E5CFA0002670D /* MainViewIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621740A0E5CFA0002670D /* MainViewIcon.tif */; };
+		B976217C0A0E5CFA0002670D /* StartButtonIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621750A0E5CFA0002670D /* StartButtonIcon.tif */; };
+		B976217D0A0E5CFA0002670D /* StatisticsViewIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621760A0E5CFA0002670D /* StatisticsViewIcon.tif */; };
+		B976217E0A0E5CFA0002670D /* UsersViewIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97621770A0E5CFA0002670D /* UsersViewIcon.tif */; };
+		B97621E30A0E771F0002670D /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B97621E20A0E771F0002670D /* AppController.mm */; };
+		B976226A0A0E86D20002670D /* ConnectionManagerCategory.mm in Sources */ = {isa = PBXBuildFile; fileRef = B97622690A0E86D20002670D /* ConnectionManagerCategory.mm */; };
+		B976232B0A0E99F00002670D /* NSApplicationIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B976232A0A0E99F00002670D /* NSApplicationIcon.icns */; };
+		B97623440A0EC3C20002670D /* ServerStartedIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B97623430A0EC3C20002670D /* ServerStartedIcon.icns */; };
+		B97623480A0EC5110002670D /* ServerStoppedIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B97623470A0EC5110002670D /* ServerStoppedIcon.icns */; };
+		B97623950A0ED82C0002670D /* initWindowBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = B97623940A0ED82C0002670D /* initWindowBackground.tif */; };
+		B97624500A0EF7210002670D /* PluginManagerCategory.mm in Sources */ = {isa = PBXBuildFile; fileRef = B976244F0A0EF7210002670D /* PluginManagerCategory.mm */; };
+		B989131F0A1193CC00C33909 /* ChangingStatusButtonIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B989131D0A1193CC00C33909 /* ChangingStatusButtonIcon.tif */; };
+		B98913200A1193CC00C33909 /* StopButtonIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = B989131E0A1193CC00C33909 /* StopButtonIcon.tif */; };
+		B98913260A1196FF00C33909 /* ServerChangingStatusIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B98913250A1196FF00C33909 /* ServerChangingStatusIcon.icns */; };
+		B98913B10A1215CF00C33909 /* PluginsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B98913B00A1215CF00C33909 /* PluginsLoader.m */; };
+		B98914840A12407900C33909 /* QueueStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98914830A12407900C33909 /* QueueStructureManager.m */; };
+		B98916030A1258C200C33909 /* QueueStructureManager.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B98914670A123D2E00C33909 /* QueueStructureManager.plugin */; };
+		B98916510A12C94700C33909 /* QueueStruct.nib in Resources */ = {isa = PBXBuildFile; fileRef = B98916500A12C94700C33909 /* QueueStruct.nib */; };
+		B98916DF0A13E47100C33909 /* SingleQueueManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B98916DD0A13E47100C33909 /* SingleQueueManager.h */; };
+		B98916E00A13E47100C33909 /* SingleQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98916DE0A13E47100C33909 /* SingleQueueManager.m */; };
+		B99EA24E0A2A0189008CAEF0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = B99EA24D0A2A0189008CAEF0 /* TODO */; };
+		B99EA2730A2A048B008CAEF0 /* ConnectionsManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9D010910A23DA0400527E3F /* ConnectionsManager.mm */; };
+		B99EA2740A2A04BD008CAEF0 /* SingleConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9D011120A24B10300527E3F /* SingleConnectionManager.mm */; };
+		B99EA3D90A2A9352008CAEF0 /* Misc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B99EA3D70A2A9352008CAEF0 /* Misc.h */; };
+		B99EA3DA0A2A9352008CAEF0 /* Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = B99EA3D80A2A9352008CAEF0 /* Misc.m */; };
+		B9C7ECE30B3483B500FFA1A4 /* SSPuginsSecondClassProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9C7ECE20B3483B500FFA1A4 /* SSPuginsSecondClassProtocol.h */; };
+		B9D303240A2B5F6C00969D97 /* LogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9D303220A2B5F6C00969D97 /* LogManager.h */; };
+		B9D303250A2B5F6C00969D97 /* LogManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9D303230A2B5F6C00969D97 /* LogManager.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98914700A123DE600C33909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98914660A123D2E00C33909;
+			remoteInfo = QueueStructureManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B98915FA0A12576E00C33909 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B98916DF0A13E47100C33909 /* SingleQueueManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98915FF0A12581D00C33909 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B98916030A1258C200C33909 /* QueueStructureManager.plugin in CopyFiles */,
+				B99EA3D90A2A9352008CAEF0 /* Misc.h in CopyFiles */,
+				B9D303240A2B5F6C00969D97 /* LogManager.h in CopyFiles */,
+				B9C7ECE30B3483B500FFA1A4 /* SSPuginsSecondClassProtocol.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* StructServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructServer_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* StructServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StructServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9761F9B0A0D014B0002670D /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		B9761F9C0A0D014B0002670D /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
+		B9761FA40A0D02440002670D /* ToolbarDelegateCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolbarDelegateCategory.h; sourceTree = "<group>"; };
+		B9761FA50A0D02440002670D /* ToolbarDelegateCategory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToolbarDelegateCategory.mm; sourceTree = "<group>"; };
+		B97620E10A0E467A0002670D /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		B97621710A0E5CFA0002670D /* ConnectionsViewIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ConnectionsViewIcon.tif; sourceTree = "<group>"; };
+		B97621730A0E5CFA0002670D /* LogsViewIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = LogsViewIcon.tif; sourceTree = "<group>"; };
+		B97621740A0E5CFA0002670D /* MainViewIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MainViewIcon.tif; sourceTree = "<group>"; };
+		B97621750A0E5CFA0002670D /* StartButtonIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StartButtonIcon.tif; sourceTree = "<group>"; };
+		B97621760A0E5CFA0002670D /* StatisticsViewIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatisticsViewIcon.tif; sourceTree = "<group>"; };
+		B97621770A0E5CFA0002670D /* UsersViewIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UsersViewIcon.tif; sourceTree = "<group>"; };
+		B97621E10A0E771F0002670D /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		B97621E20A0E771F0002670D /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		B97622680A0E86D20002670D /* ConnectionManagerCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManagerCategory.h; sourceTree = "<group>"; };
+		B97622690A0E86D20002670D /* ConnectionManagerCategory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionManagerCategory.mm; sourceTree = "<group>"; };
+		B976232A0A0E99F00002670D /* NSApplicationIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NSApplicationIcon.icns; sourceTree = "<group>"; };
+		B97623430A0EC3C20002670D /* ServerStartedIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ServerStartedIcon.icns; sourceTree = "<group>"; };
+		B97623470A0EC5110002670D /* ServerStoppedIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ServerStoppedIcon.icns; sourceTree = "<group>"; };
+		B97623940A0ED82C0002670D /* initWindowBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = initWindowBackground.tif; sourceTree = "<group>"; };
+		B976244E0A0EF7210002670D /* PluginManagerCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginManagerCategory.h; sourceTree = "<group>"; };
+		B976244F0A0EF7210002670D /* PluginManagerCategory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginManagerCategory.mm; sourceTree = "<group>"; };
+		B98912F20A11694D00C33909 /* StructServerPluginsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructServerPluginsProtocol.h; sourceTree = "<group>"; };
+		B989131D0A1193CC00C33909 /* ChangingStatusButtonIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ChangingStatusButtonIcon.tif; sourceTree = "<group>"; };
+		B989131E0A1193CC00C33909 /* StopButtonIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StopButtonIcon.tif; sourceTree = "<group>"; };
+		B98913250A1196FF00C33909 /* ServerChangingStatusIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ServerChangingStatusIcon.icns; sourceTree = "<group>"; };
+		B98913AF0A1215CF00C33909 /* PluginsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginsLoader.h; sourceTree = "<group>"; };
+		B98913B00A1215CF00C33909 /* PluginsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginsLoader.m; sourceTree = "<group>"; };
+		B98914670A123D2E00C33909 /* QueueStructureManager.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueueStructureManager.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98914680A123D2E00C33909 /* QueueStructureManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "QueueStructureManager-Info.plist"; sourceTree = "<group>"; };
+		B98914820A12407900C33909 /* QueueStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueStructureManager.h; sourceTree = "<group>"; };
+		B98914830A12407900C33909 /* QueueStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueStructureManager.m; sourceTree = "<group>"; };
+		B98916500A12C94700C33909 /* QueueStruct.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = QueueStruct.nib; sourceTree = "<group>"; };
+		B98916DD0A13E47100C33909 /* SingleQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleQueueManager.h; sourceTree = "<group>"; };
+		B98916DE0A13E47100C33909 /* SingleQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleQueueManager.m; sourceTree = "<group>"; };
+		B99EA24D0A2A0189008CAEF0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		B99EA3D70A2A9352008CAEF0 /* Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Misc.h; sourceTree = "<group>"; };
+		B99EA3D80A2A9352008CAEF0 /* Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Misc.m; sourceTree = "<group>"; };
+		B9C7ECE20B3483B500FFA1A4 /* SSPuginsSecondClassProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPuginsSecondClassProtocol.h; sourceTree = "<group>"; };
+		B9D010900A23DA0400527E3F /* ConnectionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsManager.h; sourceTree = "<group>"; };
+		B9D010910A23DA0400527E3F /* ConnectionsManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionsManager.mm; sourceTree = "<group>"; };
+		B9D011110A24B10300527E3F /* SingleConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleConnectionManager.h; sourceTree = "<group>"; };
+		B9D011120A24B10300527E3F /* SingleConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SingleConnectionManager.mm; sourceTree = "<group>"; };
+		B9D303220A2B5F6C00969D97 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		B9D303230A2B5F6C00969D97 /* LogManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogManager.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98914650A123D2E00C33909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9761F9B0A0D014B0002670D /* Controller.h */,
+				B9761F9C0A0D014B0002670D /* Controller.mm */,
+				B97622680A0E86D20002670D /* ConnectionManagerCategory.h */,
+				B97622690A0E86D20002670D /* ConnectionManagerCategory.mm */,
+				B976244E0A0EF7210002670D /* PluginManagerCategory.h */,
+				B976244F0A0EF7210002670D /* PluginManagerCategory.mm */,
+				B9761FA40A0D02440002670D /* ToolbarDelegateCategory.h */,
+				B9761FA50A0D02440002670D /* ToolbarDelegateCategory.mm */,
+				B97621E10A0E771F0002670D /* AppController.h */,
+				B97621E20A0E771F0002670D /* AppController.mm */,
+				B98913AF0A1215CF00C33909 /* PluginsLoader.h */,
+				B98913B00A1215CF00C33909 /* PluginsLoader.m */,
+				B9D010900A23DA0400527E3F /* ConnectionsManager.h */,
+				B9D010910A23DA0400527E3F /* ConnectionsManager.mm */,
+				B9D011110A24B10300527E3F /* SingleConnectionManager.h */,
+				B9D011120A24B10300527E3F /* SingleConnectionManager.mm */,
+				B99EA3D70A2A9352008CAEF0 /* Misc.h */,
+				B99EA3D80A2A9352008CAEF0 /* Misc.m */,
+				B9D303220A2B5F6C00969D97 /* LogManager.h */,
+				B9D303230A2B5F6C00969D97 /* LogManager.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* StructServer.app */,
+				B98914670A123D2E00C33909 /* QueueStructureManager.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* StructServer */ = {
+			isa = PBXGroup;
+			children = (
+				B98912F10A1168EF00C33909 /* Protocols */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				B989147B0A123F2100C33909 /* Plugins */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				B98914680A123D2E00C33909 /* QueueStructureManager-Info.plist */,
+			);
+			name = StructServer;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* StructServer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				B97620E10A0E467A0002670D /* defines.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B99EA24D0A2A0189008CAEF0 /* TODO */,
+				B97621700A0E5CF90002670D /* Images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97621700A0E5CF90002670D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B989131D0A1193CC00C33909 /* ChangingStatusButtonIcon.tif */,
+				B989131E0A1193CC00C33909 /* StopButtonIcon.tif */,
+				B97623940A0ED82C0002670D /* initWindowBackground.tif */,
+				B98913250A1196FF00C33909 /* ServerChangingStatusIcon.icns */,
+				B97623470A0EC5110002670D /* ServerStoppedIcon.icns */,
+				B97623430A0EC3C20002670D /* ServerStartedIcon.icns */,
+				B976232A0A0E99F00002670D /* NSApplicationIcon.icns */,
+				B97621710A0E5CFA0002670D /* ConnectionsViewIcon.tif */,
+				B97621730A0E5CFA0002670D /* LogsViewIcon.tif */,
+				B97621740A0E5CFA0002670D /* MainViewIcon.tif */,
+				B97621750A0E5CFA0002670D /* StartButtonIcon.tif */,
+				B97621760A0E5CFA0002670D /* StatisticsViewIcon.tif */,
+				B97621770A0E5CFA0002670D /* UsersViewIcon.tif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B98912F10A1168EF00C33909 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B98912F20A11694D00C33909 /* StructServerPluginsProtocol.h */,
+				B9C7ECE20B3483B500FFA1A4 /* SSPuginsSecondClassProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B989147B0A123F2100C33909 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B98916480A12C71800C33909 /* QueueStructure */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		B98916480A12C71800C33909 /* QueueStructure */ = {
+			isa = PBXGroup;
+			children = (
+				B98914820A12407900C33909 /* QueueStructureManager.h */,
+				B98914830A12407900C33909 /* QueueStructureManager.m */,
+				B98916DD0A13E47100C33909 /* SingleQueueManager.h */,
+				B98916DE0A13E47100C33909 /* SingleQueueManager.m */,
+				B98916500A12C94700C33909 /* QueueStruct.nib */,
+			);
+			name = QueueStructure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* StructServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "StructServer" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				B98915FF0A12581D00C33909 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98914710A123DE600C33909 /* PBXTargetDependency */,
+			);
+			name = StructServer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = StructServer;
+			productReference = 8D1107320486CEB800E47090 /* StructServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98914660A123D2E00C33909 /* QueueStructureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B989146A0A123D3100C33909 /* Build configuration list for PBXNativeTarget "QueueStructureManager" */;
+			buildPhases = (
+				B98914630A123D2E00C33909 /* Resources */,
+				B98914640A123D2E00C33909 /* Sources */,
+				B98914650A123D2E00C33909 /* Frameworks */,
+				B98915FA0A12576E00C33909 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QueueStructureManager;
+			productName = QueueStructureManager;
+			productReference = B98914670A123D2E00C33909 /* QueueStructureManager.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StructServer" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* StructServer */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* StructServer */,
+				B98914660A123D2E00C33909 /* QueueStructureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				B97621780A0E5CFA0002670D /* ConnectionsViewIcon.tif in Resources */,
+				B976217A0A0E5CFA0002670D /* LogsViewIcon.tif in Resources */,
+				B976217B0A0E5CFA0002670D /* MainViewIcon.tif in Resources */,
+				B976217C0A0E5CFA0002670D /* StartButtonIcon.tif in Resources */,
+				B976217D0A0E5CFA0002670D /* StatisticsViewIcon.tif in Resources */,
+				B976217E0A0E5CFA0002670D /* UsersViewIcon.tif in Resources */,
+				B976232B0A0E99F00002670D /* NSApplicationIcon.icns in Resources */,
+				B97623440A0EC3C20002670D /* ServerStartedIcon.icns in Resources */,
+				B97623480A0EC5110002670D /* ServerStoppedIcon.icns in Resources */,
+				B97623950A0ED82C0002670D /* initWindowBackground.tif in Resources */,
+				B989131F0A1193CC00C33909 /* ChangingStatusButtonIcon.tif in Resources */,
+				B98913200A1193CC00C33909 /* StopButtonIcon.tif in Resources */,
+				B98913260A1196FF00C33909 /* ServerChangingStatusIcon.icns in Resources */,
+				B99EA24E0A2A0189008CAEF0 /* TODO in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98914630A123D2E00C33909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98916510A12C94700C33909 /* QueueStruct.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B9761F9D0A0D014B0002670D /* Controller.mm in Sources */,
+				B9761FA60A0D02440002670D /* ToolbarDelegateCategory.mm in Sources */,
+				B97621E30A0E771F0002670D /* AppController.mm in Sources */,
+				B976226A0A0E86D20002670D /* ConnectionManagerCategory.mm in Sources */,
+				B97624500A0EF7210002670D /* PluginManagerCategory.mm in Sources */,
+				B98913B10A1215CF00C33909 /* PluginsLoader.m in Sources */,
+				B99EA2730A2A048B008CAEF0 /* ConnectionsManager.mm in Sources */,
+				B99EA2740A2A04BD008CAEF0 /* SingleConnectionManager.mm in Sources */,
+				B99EA3DA0A2A9352008CAEF0 /* Misc.m in Sources */,
+				B9D303250A2B5F6C00969D97 /* LogManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98914640A123D2E00C33909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98914840A12407900C33909 /* QueueStructureManager.m in Sources */,
+				B98916E00A13E47100C33909 /* SingleQueueManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98914710A123DE600C33909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98914660A123D2E00C33909 /* QueueStructureManager */;
+			targetProxy = B98914700A123DE600C33909 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B989146B0A123D3100C33909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "QueueStructureManager-Info.plist";
+				INSTALL_PATH = "@excecutable_path/../Plugins";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = QueueStructureManager;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		B989146C0A123D3100C33909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "QueueStructureManager-Info.plist";
+				INSTALL_PATH = "@excecutable_path/../Plugins";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = QueueStructureManager;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = StructServer;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = StructServer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B989146A0A123D3100C33909 /* Build configuration list for PBXNativeTarget "QueueStructureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B989146B0A123D3100C33909 /* Debug */,
+				B989146C0A123D3100C33909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "StructServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StructServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

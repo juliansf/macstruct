@@ -1,0 +1,12 @@
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm: In function 'void -[ConnectionsManager newClientConnection:](ConnectionsManager*, objc_selector*, NSNotification*)':
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:93: warning: no '-plugin' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:93: warning: (Messages without a matching method signature
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:93: warning: will be assumed to return 'id' and accept
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:93: warning: '...' as arguments.)
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:93: warning: no '-newStructureManager' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:121: warning: no '-reloadConnectionsData' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:125: warning: no '-updateConnectionsCount:' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm: In function 'void -[ConnectionsManager closeConnection:](ConnectionsManager*, objc_selector*, SingleConnectionManager*)':
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:144: warning: no '-reloadConnectionsData' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:148: warning: no '-updateConnectionsCount:' method found
+/Users/Julian/Lcc/3/estructuras/Final/StructServer/ConnectionsManager.mm:152: warning: no '-toogleFinishButton:' method found

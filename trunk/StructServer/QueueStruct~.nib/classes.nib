@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = QueueStructureManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_logsView" = NSView; 
+                "_mainView" = NSView; 
+                "_statisticsView" = NSView; 
+                "_usersView" = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

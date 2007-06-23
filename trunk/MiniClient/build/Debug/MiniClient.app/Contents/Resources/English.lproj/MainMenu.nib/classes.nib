@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {sendMessage = id; toogleConnection = id; }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {ipField = NSTextField; portField = NSTextField; recvTextView = NSTextView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
